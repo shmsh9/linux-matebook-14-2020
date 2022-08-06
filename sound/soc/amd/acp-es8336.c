@@ -260,6 +260,13 @@ static const struct dmi_system_id st_es8336_quirk_table[] = {
 			DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "ASN10"),
 		},
 	},
+	{
+		.callback = st_es8336_quirk_cb,
+		.matches = {
+			DMI_EXACT_MATCH(DMI_BOARD_VENDOR, "HUAWEI"),
+			DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "KLVL-WXX9"),
+		},
+	},
 	{}
 };
 
